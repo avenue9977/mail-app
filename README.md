@@ -1,6 +1,10 @@
 # MailApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+Backend build on top of Express. 
+
+## Build and run
+First you have to build the project with `ng build --prod --aot` . To run it use `node server` in the main directory
 
 ## Development server
 
