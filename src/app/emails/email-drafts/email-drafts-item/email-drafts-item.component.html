@@ -1,0 +1,10 @@
+<a class="list-group-item list-group-item-action flex-column align-items-start mb-2" [routerLink]="id">
+    <div class="d-flex w-100 justify-content-between align-items-baseline">
+        <h5 class="mb-1">To: {{ email.to }}
+        </h5>
+        <small class="text-muted">{{ email.date | date }}</small>
+
+    </div>
+    <p class="mb-1">
+        <strong>{{ email.subject }}</strong> - {{ trimContent(email.message) }}</p>
+</a>

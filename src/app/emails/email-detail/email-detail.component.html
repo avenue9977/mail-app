@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-sm-12">
+        <button type="button" class="btn btn-outline-secondary mb-3" [routerLink]="['../']">
+                <i class="fas fa-arrow-left"></i>Back</button>
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-baseline">
+                    <h5 class="mb-1" *ngIf="showOnSend">From: {{ currentEmail?.fromName }}
+                        <small>&lt;{{ currentEmail?.fromEmail }}&gt;</small>
+                    </h5>
+                    <h5 class="mb-1" *ngIf="showOnOthers">To:
+                        <small>&lt;{{ currentEmail?.to }}&gt;</small>
+                    </h5>
+
+                    <small class="text-muted">{{ currentEmail?.date | date }}</small>
+                </div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{ currentEmail?.subject }}</h5>
+                <p class="card-text">{{ currentEmail?.message }}</p>
+            </div>
+            <div class="card-footer">
+                <div class="btn-toolbar justify-content-end">
+                    <div class="btn-group" role="group" *ngIf="isSendShown">
+                        <a class="btn btn-success" role="button">
+                            <i class="fas fa-share-square"></i>Send</a>
+                    </div>
+                    <div class="btn-group" role="group" *ngIf="isEditShown">
+                        <a class="btn btn-warning" role="button" [routerLink]="['edit']" [queryParams]="{subject: currentEmail?.subject, email: currentEmail?.to, name: currentEmail?.fromName, message: currentEmail?.message}">
+
+                            <i class="far fa-edit"></i>Edit Draft</a>
+                    </div>
+                    <div class="btn-group" role="group" *ngIf="isReplyShown">
+                        <a class="btn btn-warning" role="button" [routerLink]="['/new']" [queryParams]="{subject: currentEmail?.subject, email: currentEmail?.fromEmail, name: currentEmail?.fromName}">
+                            <i class="fas fa-reply"></i>Reply</a>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-danger" role="button" (click)="deleteEmail()">
+                            <i class="far fa-trash-alt"></i>Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

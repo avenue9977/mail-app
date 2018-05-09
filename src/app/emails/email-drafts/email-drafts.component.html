@@ -1,0 +1,9 @@
+<h4>Drafts</h4>
+<div class="list-group" *ngIf="hasEmails; else emptySection">
+    <app-email-drafts-item *ngFor="let emailItem of emails" [email]="emailItem" [id]="emailItem.id"></app-email-drafts-item>
+</div>
+<ng-template #emptySection>
+    <p class="text-center">
+        <em>There are no draft messages.</em>
+    </p>
+</ng-template>

@@ -1,0 +1,12 @@
+.list-group-item {
+    cursor: pointer;
+}
+
+.list-group-item.active {
+    background-color: #6476bd;
+    border-color: #6476bd;
+}
+
+a.active .text-muted {
+    color: #cecece !important;
+}

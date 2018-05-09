@@ -1,0 +1,17 @@
+#to.ng-invalid.ng-touched {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, .25);
+}
+
+#to.ng-invalid.ng-touched+.invalid-feedback {
+    display: block;
+}
+
+i.fa-share-square {
+    margin-left: 15px;
+}
+
+i.far,
+i.fa-arrow-left {
+    margin-right: 15px;
+}

@@ -1,0 +1,20 @@
+#to.ng-invalid.ng-touched {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, .25);
+}
+
+#to.ng-invalid.ng-touched+.invalid-feedback {
+    display: block;
+}
+
+.btn {
+    margin-bottom: 10px;
+}
+
+i.fas {
+    margin-left: 15px;
+}
+
+i.far {
+    margin-right: 15px;
+}

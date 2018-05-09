@@ -1,0 +1,12 @@
+<div class="border-bottom">
+    <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn float-left">
+    <i class="fas fa-bars"></i>
+  </button>
+    <div class="compose text-center float-right">
+        <button type="button" id="newMessage" class="btn btn-danger" routerLink="/new">NEW MESSAGE</button>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div id="salert" class="alert alert-success fade {{showClass}}" role="alert">
+    <strong>Success!</strong> {{ successText }}
+</div>

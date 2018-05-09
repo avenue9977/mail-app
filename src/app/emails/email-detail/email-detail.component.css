@@ -1,0 +1,39 @@
+.btn-group {
+    margin-right: 15px;
+}
+
+.btn-group:last-child {
+    margin-right: 0;
+}
+
+i {
+    margin-right: 20px;
+}
+
+a.btn {
+    padding: 6px 25px;
+    color: #ffffff;
+}
+
+a.btn-outline-warning:hover,
+a.btn-outline-danger:hover {
+    color: inherit;
+}
+
+@media only screen and (max-width: 425px) {
+    h5 {
+        font-size: 1rem;
+    }
+    .card-header .d-flex {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    i {
+        margin-right: 10px;
+    }
+    a.btn {
+        padding: 6px 10px;
+    }
+}

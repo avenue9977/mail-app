@@ -1,0 +1,14 @@
+@media only screen and (max-width: 425px) {
+    h5.mb-1 small {
+        font-size: 60%;
+    }
+    .list-group-item .d-flex {
+        flex-direction: column;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #cecece;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+}

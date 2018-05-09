@@ -1,0 +1,32 @@
+.border-bottom {
+    border-bottom-width: 2px !important;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.alert {
+    position: absolute;
+    bottom: -70px;
+    right: 16px;
+    z-index: 999999;
+}
+
+.alert.show {
+    bottom: 16px;
+}
+
+#sidebarCollapse {
+    background-color: #6575BB;
+    border-color: #6575BB;
+}
+
+#sidebarCollapse:hover {
+    background-color: #4a5ba2;
+    border-color: #4a5ba2;
+}
+
+@media only screen and (max-width: 425px) {
+    .alert {
+        right: 1px;
+    }
+}

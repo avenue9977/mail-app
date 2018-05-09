@@ -1,0 +1,7 @@
+<h4>Send</h4>
+<div class="list-group" *ngIf="hasEmails; else emptySection">
+    <app-email-send-item *ngFor="let emailItem of emails" [email]="emailItem" [id]="emailItem.id"></app-email-send-item>
+</div>
+<ng-template #emptySection>
+    <p class="text-center"><em>There are no send messages.</em></p>
+</ng-template>
