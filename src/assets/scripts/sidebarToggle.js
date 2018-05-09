@@ -3,9 +3,4 @@ jQuery(document).ready(function() {
         jQuery('#sidebar').toggleClass('active');
         jQuery('#content').toggleClass('full');
     });
-
-    jQuery('#salert').on('click', function() {
-        jQuery(this).toggleClass('show');
-    });
-
 });
